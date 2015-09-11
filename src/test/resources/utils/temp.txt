@@ -1,0 +1,27 @@
+|Экран|18"-20"|6|
+|Разрешение|Full HD|197|
+|Тип экрана|Retina|14|
+|Покрытие экрана|Матовое|382|
+|Сенсорный экран|Да|97|
+|Процессор|Intel Core i7|170|
+|Объем оперативной памяти|12 ГБ и больше|66|
+|Видеокарта|AMD FirePro|7|
+|Объем памяти видеокарты|Более 2 ГБ|72|
+|Тип накопителя|HDD+eMMC|1|
+|Объём накопителя|От 2 ТБ|16|
+|Оптический привод|Blu-Ray|11|
+|Операционная система|Mac OS|22|
+|Украинская раскладка клавиатуры|Есть|63|
+|Вес|Более 3 кг|55|
+
+
+
+Scenario: Filtering by several filters
+Given notebook filtering page
+And all filter are turned off
+When Customer includes a filter parameters $filterParameters with values $parameterValues
+Then amount of displayed filtered notebooks equals $amount
+And all displayed notebooks have values $parameterValues in parameters $filterParameters
+And all notebooks with such $filterParameters and $parameterValues are displayed
+
+//div[@name='filter_parameters_block']/div/span[@name='filter_parameters_title' and contains(text(),'Экран')]/../../div[@name='filter_parameters']/ul
