@@ -21,7 +21,7 @@ public class FilterUtils {
 
 	public static WebDriver setupBrowser() {
 		WebDriver driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		return driver;
 	}
 
