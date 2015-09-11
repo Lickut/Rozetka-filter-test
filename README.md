@@ -1,6 +1,6 @@
 # Rozetka-filter-test
 Фильтр при выборе ноутбуков
-Задание:
+<br>Задание:
 <br>site: http://rozetka.com.ua/notebooks/c80004/filter/
 <br>написать тесты для проверки работы фильтра при выборе ноутбуков
 <br>использовать page object
